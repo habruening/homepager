@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <root>
-    <file name="ProjectViewDescriptor.java">
-      <unit at="11,0,24,0" name="Homepage.ProjectViewDescriptor" />
+  <root nodeRef="r:8567a5b1-7b96-40b6-903e-bbca9fe40b14(Homepage)/6219545824308013905">
+    <file name="paged.html">
+      <unit id="6219545824308013905" at="1,0,6,7" name="Homepage.paged" />
+    </file>
+  </root>
+  <root nodeRef="r:8567a5b1-7b96-40b6-903e-bbca9fe40b14(Homepage)/798157908153883652">
+    <file name="paged.html">
+      <unit id="798157908153883652" at="1,0,6,7" name="Homepage.paged" />
     </file>
   </root>
 </debug-info>

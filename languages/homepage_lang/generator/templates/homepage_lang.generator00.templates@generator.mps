@@ -11,8 +11,20 @@
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
+      <concept id="2133624044437898907" name="jetbrains.mps.core.xml.structure.XmlDoctypeDeclaration" flags="ng" index="29q25o">
+        <property id="2133624044437898910" name="doctypeName" index="29q25t" />
+        <child id="2133624044438029120" name="externalId" index="29qyi3" />
+      </concept>
+      <concept id="2133624044438029119" name="jetbrains.mps.core.xml.structure.XmlExternalId" flags="ng" index="29qyjW">
+        <property id="2133624044438029123" name="publicId" index="29qyi0" />
+        <property id="2133624044438029125" name="isPublic" index="29qyi6" />
+      </concept>
       <concept id="6666499814681515200" name="jetbrains.mps.core.xml.structure.XmlFile" flags="ng" index="2pMbU2">
+        <property id="7692057055172140539" name="fileExtension" index="17bj3o" />
         <child id="6666499814681515201" name="document" index="2pMbU3" />
+      </concept>
+      <concept id="6666499814681299057" name="jetbrains.mps.core.xml.structure.XmlProlog" flags="ng" index="2pNm8N">
+        <child id="7604553062773674214" name="elements" index="BGLLu" />
       </concept>
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
@@ -23,6 +35,7 @@
       </concept>
       <concept id="6786756355279841993" name="jetbrains.mps.core.xml.structure.XmlDocument" flags="ng" index="3rIKKV">
         <child id="6666499814681299055" name="rootElement" index="2pNm8H" />
+        <child id="6666499814681299060" name="prolog" index="2pNm8Q" />
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -52,16 +65,32 @@
     <property role="TrG5h" value="main" />
     <node concept="3lhOvk" id="7tWUhAEohZk" role="3lj3bC">
       <ref role="30HIoZ" to="v554:6Kt8R9QEwTH" resolve="Page" />
-      <ref role="3lhOvi" node="7tWUhAEohZm" resolve="map_Page" />
+      <ref role="3lhOvi" node="7tWUhAEohZm" resolve="paged" />
     </node>
   </node>
   <node concept="2pMbU2" id="7tWUhAEohZm">
-    <property role="TrG5h" value="map_Page" />
+    <property role="TrG5h" value="paged" />
+    <property role="17bj3o" value="html" />
     <node concept="3rIKKV" id="7tWUhAEohZn" role="2pMbU3">
-      <node concept="2pNNFK" id="7tWUhAEohZr" role="2pNm8H">
+      <node concept="2pNNFK" id="7tWUhAEpK4c" role="2pNm8H">
         <property role="2pNNFO" value="html" />
-        <node concept="3o6iSG" id="7tWUhAEohZt" role="3o6s8t">
-          <property role="3o6i5n" value="Hallo" />
+        <node concept="2pNNFK" id="7tWUhAEpK4n" role="3o6s8t">
+          <property role="2pNNFO" value="body" />
+          <node concept="2pNNFK" id="7tWUhAEpK4E" role="3o6s8t">
+            <property role="2pNNFO" value="h1" />
+            <node concept="3o6iSG" id="7tWUhAEpK4H" role="3o6s8t">
+              <property role="3o6i5n" value="H allo" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2pNm8N" id="7tWUhAEpK4X" role="2pNm8Q">
+        <node concept="29q25o" id="7tWUhAEpK4Z" role="BGLLu">
+          <property role="29q25t" value="html" />
+          <node concept="29qyjW" id="7tWUhAEpK57" role="29qyi3">
+            <property role="29qyi6" value="true" />
+            <property role="29qyi0" value="-//W3C//DTD HTML 4.01 Transitional//EN" />
+          </node>
         </node>
       </node>
     </node>

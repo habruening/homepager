@@ -16,6 +16,7 @@
     <dependency reexport="false">1f1b4a81-113d-4b88-9b67-2bae3e4f8128(com.mbeddr.mpsutil.projectview)</dependency>
     <dependency reexport="false">5c67d0a6-96e9-4056-be57-e594d54526b0(com.mbeddr.mpsutil.projectview.views)</dependency>
     <dependency reexport="false">732373f1-0d48-4122-bb43-c1606db4baca(com.mbeddr.mpsutil.projectview.runtime)</dependency>
+    <dependency reexport="false">6d38754f-8f37-4b22-88f3-4feb574b4e37(homepage_lang.generator00)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:e31ee8a9-70df-4859-9a78-d7d9637e5e93:file_system" version="0" />
@@ -37,6 +38,7 @@
     <module reference="5c67d0a6-96e9-4056-be57-e594d54526b0(com.mbeddr.mpsutil.projectview.views)" version="0" />
     <module reference="e31ee8a9-70df-4859-9a78-d7d9637e5e93(file_system)" version="0" />
     <module reference="bdbdd5ad-46cd-46f4-9c36-02284b29d9f3(homepage_lang)" version="0" />
+    <module reference="6d38754f-8f37-4b22-88f3-4feb574b4e37(homepage_lang.generator00)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
