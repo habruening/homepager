@@ -11,32 +11,6 @@
     </facet>
   </facets>
   <accessoryModels />
-  <generators>
-    <generator alias="main" namespace="file_system.generator" uuid="21b4c2c1-6aa3-4a44-bd00-1e405e9d5d15">
-      <models>
-        <modelRoot contentPath="${module}/generator" type="default">
-          <sourceRoot location="templates" />
-        </modelRoot>
-      </models>
-      <facets>
-        <facet type="java">
-          <classes generated="true" path="${module}/generator/classes_gen" />
-        </facet>
-      </facets>
-      <external-templates />
-      <languageVersions />
-      <dependencyVersions>
-        <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
-        <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
-        <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
-        <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-        <module reference="e31ee8a9-70df-4859-9a78-d7d9637e5e93(file_system)" version="0" />
-        <module reference="21b4c2c1-6aa3-4a44-bd00-1e405e9d5d15(file_system.generator)" version="0" />
-        <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-      </dependencyVersions>
-      <mapping-priorities />
-    </generator>
-  </generators>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">bdbdd5ad-46cd-46f4-9c36-02284b29d9f3(homepage_lang)</dependency>

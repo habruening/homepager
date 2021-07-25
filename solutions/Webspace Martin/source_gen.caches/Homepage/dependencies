@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="Homepage.ProjectViewDescriptor">
+    <classNode dependClassName="com.mbeddr.mpsutil.projectview.runtime.IViewDescriptor" />
+    <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode extendsClassName="com.mbeddr.mpsutil.projectview.runtime.IProjectViewDescriptor" />
+  </dependency>
+</dependenciesRoot>
+
