@@ -41,7 +41,6 @@ public class Language extends LanguageRuntime {
   @Override
   protected void fillExtendedLanguages(Collection<SLanguage> extendedLanguages) {
     extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("e31ee8a9-70df-4859-9a78-d7d9637e5e93"), "file_system"));
-    extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("1f1b4a81-113d-4b88-9b67-2bae3e4f8128"), "com.mbeddr.mpsutil.projectview"));
   }
 
   @Override
