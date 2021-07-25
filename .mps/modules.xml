@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/homepage_lang/homepage_lang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/file_system/file_system.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Webspace Martin/Webspace Martin.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

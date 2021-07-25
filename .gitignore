@@ -1,0 +1,5 @@
+# Project exclude paths
+/languages/file_system/classes_gen/
+/languages/file_system/generator/classes_gen/
+/languages/homepage_lang/classes_gen/
+/languages/homepage_lang/generator3/classes_gen/
