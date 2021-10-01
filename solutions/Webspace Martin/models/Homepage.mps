@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="bdbdd5ad-46cd-46f4-9c36-02284b29d9f3" name="homepage_lang" version="0" />
+    <engage id="bdbdd5ad-46cd-46f4-9c36-02284b29d9f3" name="homepage_lang" />
   </languages>
   <imports />
   <registry>
@@ -27,12 +28,8 @@
       <concept id="7790421904944926317" name="homepage_lang.structure.Page" flags="ng" index="qHMOv">
         <property id="7790421904944926331" name="header_title" index="qHMO9" />
         <child id="7790421904944926328" name="meta" index="qHMOa" />
-        <child id="7790421904944926344" name="nav" index="qHMRU" />
+        <child id="8610012884068353594" name="navlinks" index="3t4EWz" />
         <child id="798157908154091751" name="content" index="1P8yy4" />
-      </concept>
-      <concept id="7790421904944926338" name="homepage_lang.structure.NavLink" flags="ng" index="qHMRK">
-        <property id="7790421904944926341" name="content" index="qHMRR" />
-        <child id="8295810534535020654" name="target" index="hLYfk" />
       </concept>
       <concept id="1502904461672447928" name="homepage_lang.structure.Folder" flags="ng" index="XzDKt" />
       <concept id="1502904461671547996" name="homepage_lang.structure.LinkToWebAddress" flags="ng" index="X$MvT">
@@ -68,6 +65,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -87,69 +87,69 @@
   </registry>
   <node concept="qHMOv" id="GjC6dYb_K4">
     <property role="TrG5h" value="Internetpräsenz von Martin Brüning" />
-    <property role="qHMO9" value="kjhjh" />
+    <property role="qHMO9" value="Internetpräsenz von Martin Brüning" />
     <property role="Xy4Yk" value="index" />
-    <node concept="qHMRK" id="7cwCVDyUHVp" role="qHMRU">
-      <property role="qHMRR" value="Startseite" />
-      <node concept="X$MvZ" id="1jroUkDjaiU" role="hLYfk">
-        <node concept="XBdhx" id="1jroUkDjY2t" role="X$Mv5">
+    <node concept="10T8XK" id="7tWUhAErFyZ" role="3t4EWz">
+      <property role="10T8XZ" value="Startseite" />
+      <node concept="X$MvZ" id="7tWUhAErFz3" role="23Xz_q">
+        <node concept="XBdhx" id="7tWUhAErFz5" role="X$Mv5">
           <ref role="XBdhy" node="1jroUkDlDuN" resolve="Root Folder" />
-          <node concept="XBdh$" id="1jroUkDjY2y" role="X_S4t">
+          <node concept="XBdh$" id="7tWUhAErFzb" role="X_S4t">
             <ref role="XBdhD" node="GjC6dYb_K4" resolve="Internetpräsenz von Martin Brüning" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="qHMRK" id="7cwCVDyUHWk" role="qHMRU">
-      <property role="qHMRR" value="Weblog" />
-      <node concept="X$MvZ" id="1jroUkDjY2B" role="hLYfk">
-        <node concept="XBdhx" id="1jroUkDjY2D" role="X$Mv5">
+    <node concept="10T8XK" id="7tWUhAErMB0" role="3t4EWz">
+      <property role="10T8XZ" value="Webblog" />
+      <node concept="X$MvZ" id="7tWUhAErMBd" role="23Xz_q">
+        <node concept="XBdhx" id="7tWUhAErMBf" role="X$Mv5">
           <ref role="XBdhy" node="1jroUkDlDtw" resolve="Web-Blog" />
-          <node concept="XBdh$" id="5pggZA29aHi" role="X_S4t">
+          <node concept="XBdh$" id="7tWUhAErMBl" role="X_S4t">
             <ref role="XBdhD" node="5pggZA29aHh" resolve="noch zu erstellen" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="qHMRK" id="7cwCVDyUHWL" role="qHMRU">
-      <property role="qHMRR" value="Forschung &amp; Lehre" />
-      <node concept="X$MvZ" id="1jroUkDjY2O" role="hLYfk">
-        <node concept="XBdhx" id="1jroUkDjY2Q" role="X$Mv5">
+    <node concept="10T8XK" id="7tWUhAErMBo" role="3t4EWz">
+      <property role="10T8XZ" value="Forschung &amp; Lehre" />
+      <node concept="X$MvZ" id="7tWUhAErMB$" role="23Xz_q">
+        <node concept="XBdhx" id="7tWUhAErMBA" role="X$Mv5">
           <ref role="XBdhy" node="1jroUkDlDtv" resolve="Forschung &amp; Lehre" />
-          <node concept="XBdh$" id="5pggZA29aHl" role="X_S4t">
+          <node concept="XBdh$" id="7tWUhAErMBG" role="X_S4t">
             <ref role="XBdhD" node="5pggZA29aHh" resolve="noch zu erstellen" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="qHMRK" id="7cwCVDyUHXh" role="qHMRU">
-      <property role="qHMRR" value="EDV &amp; Linux" />
-      <node concept="X$MvZ" id="1jroUkDka3J" role="hLYfk">
-        <node concept="XBdhx" id="1jroUkDka3L" role="X$Mv5">
+    <node concept="10T8XK" id="7tWUhAErMBJ" role="3t4EWz">
+      <property role="10T8XZ" value="EDV &amp; Linux" />
+      <node concept="X$MvZ" id="7tWUhAErMC4" role="23Xz_q">
+        <node concept="XBdhx" id="7tWUhAErMC6" role="X$Mv5">
           <ref role="XBdhy" node="1jroUkDlDtt" resolve="Informatik-Themen" />
-          <node concept="XBdh$" id="5pggZA29aHo" role="X_S4t">
+          <node concept="XBdh$" id="7tWUhAErMCc" role="X_S4t">
             <ref role="XBdhD" node="5pggZA29aHh" resolve="noch zu erstellen" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="qHMRK" id="7cwCVDyUHXO" role="qHMRU">
-      <property role="qHMRR" value="Schule &amp; Unterricht" />
-      <node concept="X$MvZ" id="1jroUkDka3W" role="hLYfk">
-        <node concept="XBdhx" id="1jroUkDka3Y" role="X$Mv5">
+    <node concept="10T8XK" id="7tWUhAErMCf" role="3t4EWz">
+      <property role="10T8XZ" value="Schule &amp; Unterricht" />
+      <node concept="X$MvZ" id="7tWUhAErMCz" role="23Xz_q">
+        <node concept="XBdhx" id="7tWUhAErMC_" role="X$Mv5">
           <ref role="XBdhy" node="1jroUkDlDtu" resolve="Schule &amp; Unterricht" />
-          <node concept="XBdh$" id="5pggZA29aHr" role="X_S4t">
+          <node concept="XBdh$" id="7tWUhAErMCF" role="X_S4t">
             <ref role="XBdhD" node="5pggZA29aHh" resolve="noch zu erstellen" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="qHMRK" id="7cwCVDyUHYq" role="qHMRU">
-      <property role="qHMRR" value="Externes Material" />
-      <node concept="X$MvZ" id="1jroUkDka4V" role="hLYfk">
-        <node concept="XBdhx" id="1jroUkDka4X" role="X$Mv5">
+    <node concept="10T8XK" id="7tWUhAErMCI" role="3t4EWz">
+      <property role="10T8XZ" value="Externes Material" />
+      <node concept="X$MvZ" id="7tWUhAErMD6" role="23Xz_q">
+        <node concept="XBdhx" id="7tWUhAErMD8" role="X$Mv5">
           <ref role="XBdhy" node="1jroUkDlDtx" resolve="Externes" />
-          <node concept="XBdh$" id="5pggZA29aHu" role="X_S4t">
+          <node concept="XBdh$" id="7tWUhAErMDe" role="X_S4t">
             <ref role="XBdhD" node="5pggZA29aHh" resolve="noch zu erstellen" />
           </node>
         </node>
@@ -364,6 +364,7 @@
   <node concept="XzDKt" id="1jroUkDlDtw">
     <property role="TrG5h" value="Web-Blog" />
     <property role="Xy4Yk" value="blg" />
+    <property role="3GE5qa" value="" />
   </node>
   <node concept="XzDKt" id="1jroUkDlDtx">
     <property role="TrG5h" value="Externes" />
@@ -381,6 +382,7 @@
   <node concept="qHMOv" id="5pggZA29aHh">
     <property role="Xy4Yk" value="todo" />
     <property role="TrG5h" value="noch zu erstellen" />
+    <property role="qHMO9" value="todo" />
   </node>
 </model>
 

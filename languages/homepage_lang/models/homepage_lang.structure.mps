@@ -61,12 +61,12 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6Kt8R9QEwTN" resolve="MetaInfo" />
     </node>
-    <node concept="1TJgyj" id="6Kt8R9QEwU8" role="1TKVEi">
-      <property role="IQ2ns" value="7790421904944926344" />
+    <node concept="1TJgyj" id="7tWUhAEr$oU" role="1TKVEi">
+      <property role="IQ2ns" value="8610012884068353594" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="nav" />
+      <property role="20kJfa" value="navlinks" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6Kt8R9QEwU2" resolve="NavLink" />
+      <ref role="20lvS9" node="3leSmtPEASn" resolve="HTML_href" />
     </node>
     <node concept="1TJgyj" id="GjC6dYcozB" role="1TKVEi">
       <property role="IQ2ns" value="798157908154091751" />
@@ -90,23 +90,6 @@
       <property role="IQ2nx" value="7790421904944926326" />
       <property role="TrG5h" value="content" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6Kt8R9QEwU2">
-    <property role="EcuMT" value="7790421904944926338" />
-    <property role="TrG5h" value="NavLink" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="6Kt8R9QEwU5" role="1TKVEl">
-      <property role="IQ2nx" value="7790421904944926341" />
-      <property role="TrG5h" value="content" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="7cwCVDyTO1I" role="1TKVEi">
-      <property role="IQ2ns" value="8295810534535020654" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="1jroUkDhWff" resolve="ILink" />
     </node>
   </node>
   <node concept="1TIwiD" id="GjC6dYcozC">

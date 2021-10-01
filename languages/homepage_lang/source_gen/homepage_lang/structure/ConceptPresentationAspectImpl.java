@@ -24,7 +24,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_LinkToPage;
   private ConceptPresentation props_LinkToWebAddress;
   private ConceptPresentation props_MetaInfo;
-  private ConceptPresentation props_NavLink;
   private ConceptPresentation props_Page;
   private ConceptPresentation props_strong;
 
@@ -136,13 +135,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_MetaInfo = cpb.create();
         }
         return props_MetaInfo;
-      case LanguageConceptSwitch.NavLink:
-        if (props_NavLink == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("NavLink");
-          props_NavLink = cpb.create();
-        }
-        return props_NavLink;
       case LanguageConceptSwitch.Page:
         if (props_Page == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

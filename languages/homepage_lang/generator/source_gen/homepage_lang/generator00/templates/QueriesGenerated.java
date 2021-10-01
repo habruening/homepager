@@ -4,10 +4,123 @@ package homepage_lang.generator00.templates;
 
 import jetbrains.mps.generator.runtime.Generated;
 import jetbrains.mps.generator.impl.query.QueryProviderBase;
+import jetbrains.mps.generator.template.PropertyMacroContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import java.util.Map;
+import jetbrains.mps.generator.impl.query.SourceNodesQuery;
+import java.util.HashMap;
+import org.jetbrains.annotations.NotNull;
+import jetbrains.mps.generator.impl.query.QueryKey;
+import java.util.Collection;
+import jetbrains.mps.generator.impl.GenerationFailureException;
+import jetbrains.mps.util.IterableUtil;
+import jetbrains.mps.generator.impl.query.PropertyValueQuery;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SProperty;
+import org.jetbrains.annotations.Nullable;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 @Generated
 public class QueriesGenerated extends QueryProviderBase {
   public QueriesGenerated() {
     super(1);
+  }
+  public static Object propertyMacro_GetValue_1_0(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.header_title$OruI);
+  }
+  public static Object propertyMacro_GetValue_1_1(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.filename$tEuO);
+  }
+  public static Object propertyMacro_GetValue_2_0(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_2_1(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.content$Ol_p);
+  }
+  public static Iterable<SNode> sourceNodesQuery_1_0(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getChildren(_context.getNode(), LINKS.meta$OlQm);
+  }
+  public static Iterable<SNode> sourceNodesQuery_1_1(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getChildren(_context.getNode(), LINKS.navlinks$maKN);
+  }
+  private final Map<String, SourceNodesQuery> snsqMethods = new HashMap<String, SourceNodesQuery>();
+  {
+    int i = 0;
+    snsqMethods.put("8610012884068196345", new SNsQ(i++));
+    snsqMethods.put("8610012884068539278", new SNsQ(i++));
+  }
+  @NotNull
+  @Override
+  public SourceNodesQuery getSourceNodesQuery(@NotNull QueryKey identity) {
+    SourceNodesQuery query = identity.forFunctionNode(snsqMethods);
+    return (query != null ? query : super.getSourceNodesQuery(identity));
+  }
+  private static class SNsQ implements SourceNodesQuery {
+    private final int methodKey;
+    public SNsQ(int methodKey) {
+      this.methodKey = methodKey;
+    }
+    @NotNull
+    public Collection<SNode> evaluate(@NotNull SourceSubstituteMacroNodesContext ctx) throws GenerationFailureException {
+      switch (methodKey) {
+        case 0:
+          return IterableUtil.asCollection(QueriesGenerated.sourceNodesQuery_1_0(ctx));
+        case 1:
+          return IterableUtil.asCollection(QueriesGenerated.sourceNodesQuery_1_1(ctx));
+        default:
+          throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
+      }
+    }
+  }
+  private final Map<String, PropertyValueQuery> pvqMethods = new HashMap<String, PropertyValueQuery>();
+  {
+    int i = 0;
+    pvqMethods.put("8610012884067954568", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x16838b3fce9aa513L, 0x16838b3fce9aaa68L, "value"), "title"));
+    pvqMethods.put("8610012884068023961", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "html_file"));
+    pvqMethods.put("8610012884068287627", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "name"));
+    pvqMethods.put("8610012884068290056", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "content"));
+  }
+  @NotNull
+  @Override
+  public PropertyValueQuery getPropertyValueQuery(@NotNull QueryKey identity) {
+    PropertyValueQuery query = identity.forTemplateNode(pvqMethods);
+    return (query != null ? query : super.getPropertyValueQuery(identity));
+  }
+  private static class PVQ extends PropertyValueQuery.Base {
+    private final int methodKey;
+    /*package*/ PVQ(int methodKey, SProperty property, String templateValue) {
+      super(property, templateValue);
+      this.methodKey = methodKey;
+    }
+    @Nullable
+    public Object evaluate(@NotNull PropertyMacroContext ctx) throws GenerationFailureException {
+      switch (methodKey) {
+        case 0:
+          return QueriesGenerated.propertyMacro_GetValue_1_0(ctx);
+        case 1:
+          return QueriesGenerated.propertyMacro_GetValue_1_1(ctx);
+        case 2:
+          return QueriesGenerated.propertyMacro_GetValue_2_0(ctx);
+        case 3:
+          return QueriesGenerated.propertyMacro_GetValue_2_1(ctx);
+        default:
+          throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
+      }
+    }
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty header_title$OruI = MetaAdapterFactory.getProperty(0xbdbdd5ad46cd46f4L, 0x9c3602284b29d9f3L, 0x6c1d237276aa0e6dL, 0x6c1d237276aa0e7bL, "header_title");
+    /*package*/ static final SProperty filename$tEuO = MetaAdapterFactory.getProperty(0xe31ee8a970df4859L, 0x9a78d7d9637e5e93L, 0x7320a3ba62f3fb5cL, 0x14db63a529532c31L, "filename");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty content$Ol_p = MetaAdapterFactory.getProperty(0xbdbdd5ad46cd46f4L, 0x9c3602284b29d9f3L, 0x6c1d237276aa0e73L, 0x6c1d237276aa0e76L, "content");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink meta$OlQm = MetaAdapterFactory.getContainmentLink(0xbdbdd5ad46cd46f4L, 0x9c3602284b29d9f3L, 0x6c1d237276aa0e6dL, 0x6c1d237276aa0e78L, "meta");
+    /*package*/ static final SContainmentLink navlinks$maKN = MetaAdapterFactory.getContainmentLink(0xbdbdd5ad46cd46f4L, 0x9c3602284b29d9f3L, 0x6c1d237276aa0e6dL, 0x777ce919aa6e463aL, "navlinks");
   }
 }

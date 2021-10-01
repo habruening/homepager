@@ -28,7 +28,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptLinkToPage = createDescriptorForLinkToPage();
   /*package*/ final ConceptDescriptor myConceptLinkToWebAddress = createDescriptorForLinkToWebAddress();
   /*package*/ final ConceptDescriptor myConceptMetaInfo = createDescriptorForMetaInfo();
-  /*package*/ final ConceptDescriptor myConceptNavLink = createDescriptorForNavLink();
   /*package*/ final ConceptDescriptor myConceptPage = createDescriptorForPage();
   /*package*/ final ConceptDescriptor myConceptstrong = createDescriptorForstrong();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -47,7 +46,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptFolder, myConceptHTML_IContent, myConceptHTML_div, myConceptHTML_h2, myConceptHTML_h3, myConceptHTML_href, myConceptHTML_img, myConceptHTML_li, myConceptHTML_p, myConceptHTML_ul, myConceptHomepage, myConceptILink, myConceptLinkToPage, myConceptLinkToWebAddress, myConceptMetaInfo, myConceptNavLink, myConceptPage, myConceptstrong);
+    return Arrays.asList(myConceptFolder, myConceptHTML_IContent, myConceptHTML_div, myConceptHTML_h2, myConceptHTML_h3, myConceptHTML_href, myConceptHTML_img, myConceptHTML_li, myConceptHTML_p, myConceptHTML_ul, myConceptHomepage, myConceptILink, myConceptLinkToPage, myConceptLinkToWebAddress, myConceptMetaInfo, myConceptPage, myConceptstrong);
   }
 
   @Override
@@ -84,8 +83,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptLinkToWebAddress;
       case LanguageConceptSwitch.MetaInfo:
         return myConceptMetaInfo;
-      case LanguageConceptSwitch.NavLink:
-        return myConceptNavLink;
       case LanguageConceptSwitch.Page:
         return myConceptPage;
       case LanguageConceptSwitch.strong:
@@ -231,15 +228,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("content", 0x6c1d237276aa0e76L).type(PrimitiveTypeId.STRING).origin("7790421904944926326").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForNavLink() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("homepage_lang", "NavLink", 0xbdbdd5ad46cd46f4L, 0x9c3602284b29d9f3L, 0x6c1d237276aa0e82L);
-    b.class_(false, false, false);
-    b.origin("r:37a51c15-54fd-4dbe-83b8-2842f007aa21(homepage_lang.structure)/7790421904944926338");
-    b.version(2);
-    b.property("content", 0x6c1d237276aa0e85L).type(PrimitiveTypeId.STRING).origin("7790421904944926341").done();
-    b.aggregate("target", 0x7320a3ba62e7406eL).target(0xbdbdd5ad46cd46f4L, 0x9c3602284b29d9f3L, 0x14db63a52947c3cfL).optional(false).ordered(true).multiple(false).origin("8295810534535020654").done();
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForPage() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("homepage_lang", "Page", 0xbdbdd5ad46cd46f4L, 0x9c3602284b29d9f3L, 0x6c1d237276aa0e6dL);
     b.class_(false, false, true);
@@ -248,7 +236,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("header_title", 0x6c1d237276aa0e7bL).type(PrimitiveTypeId.STRING).origin("7790421904944926331").done();
     b.aggregate("meta", 0x6c1d237276aa0e78L).target(0xbdbdd5ad46cd46f4L, 0x9c3602284b29d9f3L, 0x6c1d237276aa0e73L).optional(true).ordered(true).multiple(true).origin("7790421904944926328").done();
-    b.aggregate("nav", 0x6c1d237276aa0e88L).target(0xbdbdd5ad46cd46f4L, 0x9c3602284b29d9f3L, 0x6c1d237276aa0e82L).optional(true).ordered(true).multiple(true).origin("7790421904944926344").done();
+    b.aggregate("navlinks", 0x777ce919aa6e463aL).target(0xbdbdd5ad46cd46f4L, 0x9c3602284b29d9f3L, 0x354ee16775aa6e17L).optional(true).ordered(true).multiple(true).origin("8610012884068353594").done();
     b.aggregate("content", 0xb13a0637e3188e7L).target(0xbdbdd5ad46cd46f4L, 0x9c3602284b29d9f3L, 0xb13a0637e32013eL).optional(true).ordered(true).multiple(true).origin("798157908154091751").done();
     return b.create();
   }

@@ -73,6 +73,22 @@
   <node concept="24kQdi" id="GjC6dYb_K5">
     <ref role="1XX52x" to="v554:6Kt8R9QEwTH" resolve="Page" />
     <node concept="3EZMnI" id="GjC6dYb_K7" role="2wV5jI">
+      <node concept="3EZMnI" id="7tWUhAEqcC3" role="3EZMnx">
+        <node concept="VPM3Z" id="7tWUhAEqcC5" role="3F10Kt" />
+        <node concept="3F0ifn" id="7tWUhAEqcC7" role="3EZMnx">
+          <property role="3F0ifm" value="Windows title:" />
+          <node concept="VechU" id="7tWUhAEqcD1" role="3F10Kt">
+            <property role="Vb096" value="g1_qVrt/darkMagenta" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="7tWUhAEqcCT" role="3EZMnx">
+          <ref role="1NtTu8" to="v554:6Kt8R9QEwTV" resolve="header_title" />
+          <node concept="VechU" id="7tWUhAEqcD3" role="3F10Kt">
+            <property role="Vb096" value="g1_qVrt/darkMagenta" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="7tWUhAEqcC8" role="2iSdaV" />
+      </node>
       <node concept="3EZMnI" id="6zrUevFbefP" role="3EZMnx">
         <node concept="VPM3Z" id="6zrUevFbefR" role="3F10Kt" />
         <node concept="3F0A7n" id="6zrUevFbegx" role="3EZMnx">
@@ -143,19 +159,19 @@
           <property role="Vb096" value="g1_qVrt/darkMagenta" />
         </node>
       </node>
-      <node concept="3EZMnI" id="GjC6dYcig4" role="3EZMnx">
-        <node concept="VPM3Z" id="GjC6dYcig6" role="3F10Kt" />
-        <node concept="3F0ifn" id="GjC6dYcig8" role="3EZMnx">
+      <node concept="3EZMnI" id="7tWUhAEr$sj" role="3EZMnx">
+        <node concept="VPM3Z" id="7tWUhAEr$sl" role="3F10Kt" />
+        <node concept="3F0ifn" id="7tWUhAEr$sn" role="3EZMnx">
           <property role="3F0ifm" value=" " />
         </node>
-        <node concept="3F2HdR" id="GjC6dYcigc" role="3EZMnx">
-          <ref role="1NtTu8" to="v554:6Kt8R9QEwU8" resolve="nav" />
-          <node concept="2EHx9g" id="GjC6dYcigg" role="2czzBx" />
-          <node concept="3F0ifn" id="GjC6dYcigi" role="2czzBI">
+        <node concept="3F2HdR" id="7tWUhAEr$th" role="3EZMnx">
+          <ref role="1NtTu8" to="v554:7tWUhAEr$oU" resolve="navlinks" />
+          <node concept="2EHx9g" id="7tWUhAErFzq" role="2czzBx" />
+          <node concept="3F0ifn" id="7tWUhAEr$tn" role="2czzBI">
             <property role="3F0ifm" value="&lt;empty navigation bar&gt;" />
           </node>
         </node>
-        <node concept="l2Vlx" id="GjC6dYcig9" role="2iSdaV" />
+        <node concept="l2Vlx" id="7tWUhAEr$so" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="1jroUkDg9vy" role="3EZMnx" />
       <node concept="3EZMnI" id="GjC6dYcozL" role="3EZMnx">
@@ -184,36 +200,6 @@
         <ref role="1NtTu8" to="v554:6Kt8R9QEwTQ" resolve="content" />
       </node>
       <node concept="2iRfu4" id="GjC6dYb_Kt" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="GjC6dYcigj">
-    <ref role="1XX52x" to="v554:6Kt8R9QEwU2" resolve="NavLink" />
-    <node concept="3EZMnI" id="GjC6dYcigl" role="2wV5jI">
-      <node concept="3F0A7n" id="GjC6dYcigp" role="3EZMnx">
-        <ref role="1NtTu8" to="v554:6Kt8R9QEwU5" resolve="content" />
-        <node concept="2biZxu" id="7cwCVDyW1xl" role="3F10Kt">
-          <property role="1rj3mz" value="Arial" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="GjC6dYcigs" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
-        <node concept="VechU" id="GjC6dYe5BY" role="3F10Kt">
-          <property role="Vb096" value="g1_qVrt/darkMagenta" />
-        </node>
-        <node concept="2biZxu" id="7cwCVDyW1xq" role="3F10Kt">
-          <property role="1rj3mz" value="Courier New" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="7cwCVDyTOjk" role="3EZMnx">
-        <ref role="1NtTu8" to="v554:7cwCVDyTO1I" resolve="target" />
-        <node concept="VechU" id="7cwCVDyW1xc" role="3F10Kt">
-          <property role="Vb096" value="g1_qVrt/darkMagenta" />
-        </node>
-        <node concept="2biZxu" id="7cwCVDyW1xh" role="3F10Kt">
-          <property role="1rj3mz" value="Courier New" />
-        </node>
-      </node>
-      <node concept="2iRfu4" id="GjC6dYcigo" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="GjC6dYcozE">

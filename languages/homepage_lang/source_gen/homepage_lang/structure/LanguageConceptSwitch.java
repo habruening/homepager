@@ -24,9 +24,8 @@ public final class LanguageConceptSwitch {
   public static final int LinkToPage = 12;
   public static final int LinkToWebAddress = 13;
   public static final int MetaInfo = 14;
-  public static final int NavLink = 15;
-  public static final int Page = 16;
-  public static final int strong = 17;
+  public static final int Page = 15;
+  public static final int strong = 16;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xbdbdd5ad46cd46f4L, 0x9c3602284b29d9f3L);
@@ -45,7 +44,6 @@ public final class LanguageConceptSwitch {
     builder.put(0x14db63a52948445aL, LinkToPage);
     builder.put(0x14db63a52948445cL, LinkToWebAddress);
     builder.put(0x6c1d237276aa0e73L, MetaInfo);
-    builder.put(0x6c1d237276aa0e82L, NavLink);
     builder.put(0x6c1d237276aa0e6dL, Page);
     builder.put(0x354ee16775a937a2L, strong);
     myIndex = builder.seal();
